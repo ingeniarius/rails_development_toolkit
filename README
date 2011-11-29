@@ -1,1 +1,5 @@
 Rails Development Toolkit
+=========================
+
+rake development:config:prepare        # Build templates from current development config files (existing files will be overwritten)
+rake development:config:setup          # Build development config files from templates (existing files will be overwritten)

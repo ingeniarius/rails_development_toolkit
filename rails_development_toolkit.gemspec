@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = RailsDevelopmentToolkit::VERSION
   s.authors     = ["ingeniarius"]
   s.email       = ["mail@ingeniarius.name"]
-  s.homepage    = "https://github.com/ingeniarius/rails-development-toolkit"
+  s.homepage    = "https://github.com/ingeniarius/rails_development_toolkit"
   s.summary     = %q{Rails Development Toolkit}
   s.description = %q{Rake tasks for Rails development process management}
 

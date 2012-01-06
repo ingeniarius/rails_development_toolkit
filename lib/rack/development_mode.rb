@@ -10,7 +10,7 @@ module Rack
     def call env
       status, headers, response = @app.call(env)
       content_type = headers["Content-Type"]  
-      if content_type && content_type.include?("text/html")
+      if content_type && content_type.include?("text/html") && response.respond_to?(:body)
         response.body = response.body.gsub(/(<body.*?>)/, '\\1' << DEV_CODE)
       end
       [status, headers, response]
